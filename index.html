@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="./app.js" defer></script>
+    <title>VIAJE MACONDO</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="title">
+            <div id="logo"></div>
+            <div id="slogan">COFFE SHOP</div>
+        </nav>
+        <div class="search-img">
+            <div class="title-search">
+                <div class="image-search">
+                    Tienda De Cafe, ELige lo mejor para ti.
+                </div>
+                <input type="text" name="text" class="bar-search" placeholder="Todo lo que imagines, Aqui estara.">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </div>
+        </div>
+
+        <div class="content1">
+            <div class="title2">
+                <div class="title-text">
+                    <h2 class="text1">Delicias Aromáticas: El Rincón del Café</h2>
+                    <h3 class="text2">Populares del dia... :)</h3>
+                    <hr>
+                </div>
+                <div class="btn-cont-ant">
+                    <button class="arrow_back">
+                        <span class="material-symbols-outlined">
+                        arrow_back_ios
+                        </span>
+                    </button>
+                    <button class="arrow_next">
+                        <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="card1">
+                    <div class="img"></div>
+                    <div class="text">
+                        <p class="p1">Almojabana con Cafe</p>
+                        <p class="d1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur beatae necessitatibus corporis veniam delectus.</p>
+                    </div>
+                    <div class="incre_dism">
+                        <h3 id="price"> Precio: 15.000</h3>
+                        <button type="button"  onclick="">-</button>
+                        <input id="input1" type="text" name="cantidad" value="0">
+                        <button type="button"  onclick="suma(cantidad)" class="suma">+</button>
+                    </div>
+                        <button type="button"  onclick="agregarFila('Almojabana con Cafe','15000','1')">¡AGREGAR!</button>
+                </div>
+                <div class="card2">
+                    <div class="img">
+                    </div>
+                    <div class="text">
+                        <p class="p2">Subway con gaseosa</p>
+                        <p class="d2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur beatae necessitatibus corporis veniam delectus.</p>
+                    </div>
+                    <div class="incre_dism">
+                        <h3 id="price"> Precio: 20.000</h3>
+                        <button type="button"  onclick="agregarFila()">-</button>
+                        <input id="input2" type="text" name="cantidad" value="0">
+                        <button type="button"  onclick="">+</button>
+                    </div>
+                    <button type="button"  onclick="agregarFila('Subway con gaseosa','20000','2')">¡AGREGAR!</button>
+                </div>
+
+                <div class="card3">
+                    <div class="img">
+                    </div>
+                    <div class="text">
+                        <p class="p3">Ensalada</p>
+                        <p class="d3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur beatae necessitatibus corporis veniam delectus.</p>
+                    </div>
+                    <div class="incre_dism">
+                        <h3 id="price" > Precio: 15.000</h3>
+                        <button type="button"  onclick="">-</button>
+                        <input id="input3" type="text" name="cantidad" value="0">
+                        <button type="button"  onclick="">+</button>
+                    </div>
+                    <button type="button" onclick="agregarFila('Ensalada','15000','3')" >¡AGREGAR!</button>
+                </div>
+
+                <div class="card4">
+                    <div class="img">
+                    </div>
+                    <div class="text">
+                        <p class="p4">Empanadas</p>
+                        <p class="d4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur beatae necessitatibus corporis veniam delectus.</p>
+                    </div>
+                    <div class="incre_dism">
+                        <h3 id="price"> Precio: 8.000</h3>
+                        <button type="button" onclick="">-</button>
+                        <input id="input4" type="text" name="cantidad" id="cant" value="0">
+                        <button type="button"  onclick="">+</button>
+                    </div>
+                    <button type="button" onclick="agregarFila('Empanadas','8000','4')" >¡AGREGAR!</button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="part_sup">
+                <div class="part1">
+                    <h2 class="tt1-footer">Contacto</h2>
+                    <h4>info@misitio.com</h4>
+                    <h4>+52-1-33-12345678</h4>
+                    <h4>Av. Fray A. Alcalde 10</h4>
+                    <h4>Medellin. COLOMBIA</h4>
+                </div>
+                <div class="part1">
+                    <h1 class="tp2-footer" >COFFE</h1>
+                    <h3>Facebook | Twitter | Instagram</h3>
+                </div>
+                <div class="part1">
+                    <h2 class="tt1-footer">Servicio</h2>
+                    <h4>Entrega el mismo día en todo Colombia</h4>
+                    <h4>Lun - Vie: 11:00 - 22:00</h4>
+                    <h4>Sab - Dom: 11:00 - 00:00</h4>
+                </div>
+            </div>
+            <div class="part_inf">
+
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+</html>
